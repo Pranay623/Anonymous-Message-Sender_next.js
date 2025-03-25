@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  "include": ["**/*.ts", "**/*.tsx", "path-to-your-next-auth.d.ts"]
+}
+
 
 export default nextConfig;
