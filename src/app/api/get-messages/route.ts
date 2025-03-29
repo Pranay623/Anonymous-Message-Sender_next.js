@@ -38,7 +38,11 @@ export async function GET(request: Request){
             message: user[0].messages
         },{status: 200});
     }catch(error){
-
+        console.log("unexpected error occured ",error);
+        return Response.json({
+            success: false,
+            message: "Failed to send the message"
+        },{status: 500});
     }
     
 }
